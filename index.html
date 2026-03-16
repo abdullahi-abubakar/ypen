@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>YPEN — Youth Power & Empowerment Network</title>
+<title>YESN — Youth Empowerment and Sustainable Network</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -224,7 +224,7 @@
   /* ───── FOCUS AREAS ───── */
   .focus { background: var(--white); }
   .focus-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem; margin-top: 4rem;
   }
   .focus-card {
@@ -237,6 +237,7 @@
   .focus-card.card-2 { background: #0d3320; }
   .focus-card.card-3 { background: var(--lime); }
   .focus-card.card-4 { background: #133a1f; }
+  .focus-card.card-5 { background: #1a4a10; }
   .focus-card .card-num {
     font-family: 'Syne', sans-serif; font-size: 4rem;
     font-weight: 800; line-height: 1; opacity: 0.12;
@@ -253,6 +254,9 @@
   .focus-card.card-1 h3, .focus-card.card-2 h3, .focus-card.card-4 h3 { color: var(--lime); }
   .focus-card.card-3 h3 { color: var(--green-deep); }
   .focus-card.card-1 p, .focus-card.card-2 p, .focus-card.card-4 p { color: rgba(255,255,255,0.65); }
+  .focus-card.card-5 h3 { color: var(--lime); }
+  .focus-card.card-5 p { color: rgba(255,255,255,0.65); }
+  .focus-card.card-5 .card-num { color: var(--white); }
   .focus-card.card-3 p { color: rgba(4,40,15,0.7); }
   .focus-card.card-1 .card-num, .focus-card.card-2 .card-num, .focus-card.card-4 .card-num { color: var(--white); }
   .focus-card.card-3 .card-num { color: var(--green-deep); }
@@ -369,6 +373,12 @@
     font-size: 0.88rem; color: rgba(255,255,255,0.5);
     margin-top: 0.8rem; line-height: 1.7; max-width: 260px;
   }
+  .footer-contact {
+    font-size: 0.82rem; color: rgba(255,255,255,0.45);
+    margin-top: 1rem; line-height: 1.8;
+  }
+  .footer-contact a { color: rgba(255,255,255,0.45); text-decoration: none; }
+  .footer-contact a:hover { color: var(--lime); }
   .footer-col h5 {
     font-family: 'Syne', sans-serif; font-size: 0.85rem;
     font-weight: 700; color: var(--lime);
@@ -404,7 +414,6 @@
     }
     .focus-grid { grid-template-columns: 1fr 1fr; }
     .impact-grid { grid-template-columns: 1fr 1fr; }
-    .sdg-grid { grid-template-columns: repeat(3, 1fr); }
     .hero-stats { display: none; }
     .about-visual { display: none; }
     nav .nav-links { display: none; }
@@ -420,7 +429,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">YPEN<span>.</span></a>
+  <a class="nav-logo" href="#">YESN<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#focus">Focus Areas</a></li>
@@ -444,7 +453,7 @@
   <div class="hero-stats">
     <div class="hero-stat"><div class="num">5K+</div><div class="lbl">Youth Reached</div></div>
     <div class="hero-stat"><div class="num">12</div><div class="lbl">States Active</div></div>
-    <div class="hero-stat"><div class="num">4</div><div class="lbl">Core Programs</div></div>
+    <div class="hero-stat"><div class="num">5</div><div class="lbl">Core Programs</div></div>
   </div>
 </section>
 
@@ -455,12 +464,14 @@
     <span>Education & Health Support</span>
     <span>Youth Empowerment</span>
     <span>Clean Energy Access</span>
+    <span>Agriculture & Food Security</span>
     <span>SDG Action</span>
     <span>Community Development</span>
     <span>Human Rights Advocacy</span>
     <span>Education & Health Support</span>
     <span>Youth Empowerment</span>
     <span>Clean Energy Access</span>
+    <span>Agriculture & Food Security</span>
     <span>SDG Action</span>
     <span>Community Development</span>
   </div>
@@ -472,7 +483,7 @@
   <div class="about-grid">
     <div class="about-text">
       <h2 class="section-title">A Generation Rising<br/>for <span class="accent">Lasting Change</span></h2>
-      <p>YPEN — the Youth Power & Empowerment Network — is a grassroots organization mobilizing young Nigerians and Africans to take bold action on the world's most pressing challenges.</p>
+      <p>YESN — the Youth Empowerment and Sustainable Network — is a grassroots organization mobilizing young Nigerians and Africans to take bold action on the world's most pressing challenges.</p>
       <p>We operate at the intersection of advocacy, education, community health, and sustainable development — equipping youth with the tools, networks, and platforms they need to drive meaningful impact aligned with the United Nations' 2030 Agenda.</p>
       <p>Our work is grounded in the belief that young people are not just the leaders of tomorrow — they are the changemakers of today.</p>
     </div>
@@ -504,7 +515,7 @@
 <!-- FOCUS AREAS -->
 <section class="focus" id="focus">
   <div class="section-label">What We Do</div>
-  <h2 class="section-title">Our Four<br/><span class="accent">Focus Areas</span></h2>
+  <h2 class="section-title">Our Five<br/><span class="accent">Focus Areas</span></h2>
   <div class="focus-grid">
     <div class="focus-card card-1">
       <span class="card-num">01</span>
@@ -530,14 +541,20 @@
       <h3>Clean Energy</h3>
       <p>We advocate for renewable energy access and climate action — educating communities on sustainable energy solutions, championing clean energy policy, and mobilizing youth for a green future.</p>
     </div>
+    <div class="focus-card card-5">
+      <span class="card-num">05</span>
+      <span class="card-icon">🌾</span>
+      <h3>Agriculture & Food Security</h3>
+      <p>We equip youth with modern farming knowledge, agri-entrepreneurship skills, and sustainable land-use practices — mobilizing young Nigerians to drive food security and rural economic growth across communities.</p>
+    </div>
   </div>
 </section>
-
 <!-- SDG ALIGNMENT -->
 <section class="sdg" id="sdgs">
   <div class="section-label">UN 2030 Agenda</div>
   <h2 class="section-title">Aligned with the<br/><span class="accent">Sustainable Development Goals</span></h2>
   <div class="sdg-grid">
+    <div class="sdg-badge"><span class="sdg-num">SDG 2</span><p>Zero Hunger</p></div>
     <div class="sdg-badge"><span class="sdg-num">SDG 3</span><p>Good Health & Well-Being</p></div>
     <div class="sdg-badge"><span class="sdg-num">SDG 4</span><p>Quality Education</p></div>
     <div class="sdg-badge"><span class="sdg-num">SDG 5</span><p>Gender Equality</p></div>
@@ -583,7 +600,7 @@
       <h2 class="section-title">Be the Change<br/>You Want to See</h2>
       <p>Whether you are a young activist, a student, a professional, or an organization — there is a place for you in our movement. Together, we can create the future we deserve.</p>
       <div class="involved-actions">
-        <a class="btn-dark" href="mailto:hello@ypen.org">Contact Us</a>
+        <a class="btn-dark" href="mailto:hello@yesn.org">Contact Us</a>
         <a class="btn-outline-dark" href="#">Download Brochure</a>
       </div>
     </div>
@@ -605,7 +622,7 @@
       <div class="involved-card">
         <span class="icon">🏢</span>
         <div>
-          <h4>Partner with YPEN</h4>
+          <h4>Partner with YESN</h4>
           <p>Organizations and institutions can collaborate with us to amplify impact and reach.</p>
         </div>
       </div>
@@ -624,8 +641,8 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a class="logo" href="#">YPEN.</a>
-      <p>Youth Power & Empowerment Network — mobilizing a generation for justice, sustainability, and opportunity.</p>
+      <a class="logo" href="#">YESN.</a>
+      <p>Youth Empowerment and Sustainable Network — mobilizing a generation for justice, sustainability, and opportunity.</p>
     </div>
     <div class="footer-col">
       <h5>Programs</h5>
@@ -634,12 +651,13 @@
         <li><a href="#">Education & Health</a></li>
         <li><a href="#">Youth Leadership</a></li>
         <li><a href="#">Clean Energy</a></li>
+        <li><a href="#">Agriculture</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h5>Organization</h5>
       <ul>
-        <li><a href="#">About YPEN</a></li>
+        <li><a href="#">About YESN</a></li>
         <li><a href="#">Our Team</a></li>
         <li><a href="#">Partners</a></li>
         <li><a href="#">Press & Media</a></li>
@@ -656,7 +674,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Youth Power & Empowerment Network. All rights reserved.</span>
+    <span>© 2025 Youth Empowerment and Sustainable Network. All rights reserved.</span>
     <div class="social-links">
       <a href="#">𝕏</a>
       <a href="#">in</a>
